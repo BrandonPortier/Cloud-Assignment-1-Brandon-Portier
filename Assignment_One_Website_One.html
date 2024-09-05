@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #666;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Brandons Website!!!</h1>
+    <p>This website is created for my SWE 4633 class.</p>
+    <nav>
+        <a href="Assignment_One_Website_Two.html">About Me</a> | 
+        <a href="Assignment_One_Website_Three.html">Image Page</a>
+    </nav>
+    <br>
+    <button onclick="displayMessage()">Don't Press!</button>
+    <p id="message"></p>
+
+    <footer>
+        <p>© 2024 Brandon Portier. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function displayMessage() {
+            document.getElementById('message').innerText = "I told you not to press it, now Brandon is sad...";
+        }
+    </script>
+</body>
+</html>
